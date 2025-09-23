@@ -14,6 +14,8 @@
    $ npm install
    ```
 
+3. Create `.env` file using env.example as a reference
+
 3. Finally, run `$ npm run dev` to start the server
 
 The Client will be available at `http://localhost:5173`
