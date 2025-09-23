@@ -10,7 +10,7 @@ export default function NavigationBar() {
   return (
     <nav className="flex w-full items-center justify-between bg-white px-6 py-4 shadow">
       <Link to="/" className="text-2xl font-bold">
-        Arma Social 🪖
+        Tiny Ops
       </Link>
       <div className="flex items-center gap-4">
         {isLoading ? (

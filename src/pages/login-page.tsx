@@ -32,7 +32,7 @@ export default function Login() {
             Welcome Back
           </h1>
           <p className="text-lg text-gray-700">
-            Sign in to access your Arma Social account and join the community.
+            Sign in to access your Tiny Ops account and join the community.
           </p>
         </div>
         <form

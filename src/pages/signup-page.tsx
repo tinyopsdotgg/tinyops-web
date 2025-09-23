@@ -7,7 +7,7 @@ export default function SignUp() {
       <div className="mt-8 flex flex-grow flex-col items-center px-4 sm:px-6 lg:px-8">
         <div className="mb-8 max-w-prose text-center">
           <h1 className="mb-4 text-3xl font-bold text-gray-900">
-            Join Arma Social
+            Join Tiny Ops
           </h1>
           <p className="text-lg text-gray-700">
             Create an account to start participating in Arma events and connect

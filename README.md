@@ -1,4 +1,4 @@
-# TinyOps Web
+# Tiny Ops Web
 
 ## Developer Setup
 

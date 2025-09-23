@@ -28,7 +28,7 @@ export default function Landing() {
       <div className="mt-8 flex flex-grow flex-col items-center px-4 sm:px-6 lg:px-8">
         <div className="mb-8 max-w-prose text-center">
           <h1 className="mb-4 text-3xl font-bold text-gray-900">
-            Welcome to Arma Social
+            Welcome to Tiny Ops
           </h1>
           <p className="text-lg text-gray-700">
             Find and join exciting Arma events hosted by the community. Browse
