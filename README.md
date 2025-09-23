@@ -4,15 +4,15 @@
 
 1. Clone the repo
 
-    ```sh
-    $ git clone https://github.com/tinyopsdotgg/tinyops-web
-    ```
+   ```sh
+   $ git clone https://github.com/tinyopsdotgg/tinyops-web
+   ```
 
 2. Install Dependencies
 
-    ```sh
-    $ npm install
-    ```
+   ```sh
+   $ npm install
+   ```
 
 3. Finally, run `$ npm run dev` to start the server
 
