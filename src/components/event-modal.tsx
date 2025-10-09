@@ -29,7 +29,7 @@ export default function EventModal({ event, onClose }: EventModalProps) {
         />
         <h2 className="mb-2 text-2xl font-bold">{event.title}</h2>
         <div className="mb-2 text-sm text-gray-500">
-          {event.game} • {event.location} • {event.type}
+          {event.game} • {event.serverMap} • {event.type}
         </div>
         <div className="mb-2">{event.summary}</div>
         <div className="mb-4 text-gray-700">{event.longDescription}</div>

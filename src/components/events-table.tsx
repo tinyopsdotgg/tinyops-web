@@ -4,7 +4,7 @@ import EventCard from './event-card';
 import EventModal from './event-modal';
 import type { EventDto } from '../dto/event.dto';
 
-const EVENTS_PER_PAGE = 9;
+const EVENTS_PER_PAGE = 6;
 
 // Define the props interface for EventsPage
 interface EventsTableProps {
@@ -43,8 +43,8 @@ export default function EventsTable({
 
   // Sort filtered events by time
   const sortedEvents = [...filteredEvents].sort((a, b) => {
-    const timeA = Date.parse(a.timeUtc);
-    const timeB = Date.parse(b.timeUtc);
+    const timeA = Date.parse(a.startTimeUtc);
+    const timeB = Date.parse(b.startTimeUtc);
     return timeA - timeB;
   });
 
@@ -112,7 +112,20 @@ export default function EventsTable({
           disabled={currentPage === 1}
           className="rounded bg-blue-600 px-4 py-2 text-white disabled:bg-gray-400"
         >
-          Previous
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
         </button>
         <span className="text-gray-700">
           Page {currentPage} of {totalPages}
@@ -122,7 +135,20 @@ export default function EventsTable({
           disabled={currentPage === totalPages}
           className="rounded bg-blue-600 px-4 py-2 text-white disabled:bg-gray-400"
         >
-          Next
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            className="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
         </button>
       </div>
       {selectedEvent && (

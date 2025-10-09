@@ -64,7 +64,7 @@ export default function EventCard({ event }: EventCardProps) {
           Region: {event.serverRegion}
         </div>
         <div className="mb-2 text-xs text-gray-500">
-          {formatLocalDateTime(event.timeUtc)} • {event.location} •{' '}
+          {formatLocalDateTime(event.startTimeUtc)} • {event.serverMap} •{' '}
           {formatDuration(event.durationMinutes)}
         </div>
         <p className="mb-3 text-gray-700">{event.summary}</p>
