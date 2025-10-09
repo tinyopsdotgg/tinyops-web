@@ -1,4 +1,5 @@
 import type { EventDto } from '../dto/event.dto';
+import { Game } from '../enums/game.enum';
 
 interface EventCardProps {
   event: EventDto;
@@ -37,11 +38,20 @@ export default function EventCard({ event }: EventCardProps) {
   return (
     <div className="mb-8 overflow-hidden rounded-2xl border border-white/30 bg-gradient-to-br from-white/60 to-blue-100/40 p-0 shadow-xl backdrop-blur-md">
       <div className="relative h-48 w-full overflow-hidden">
-        <img
-          src={event.imageUrl}
-          alt={event.title}
-          className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
-        />
+        {event.game === Game.ArmaReforger ? (
+          <img
+            src={'http://localhost:9000/public/arma-reforger-4k.webp'}
+            alt="Arma Reforger Title Page"
+            className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+          />
+        ) : (
+          <img
+            src="http://localhost:9000/public/arma-3.jpg"
+            alt="Arma 3 Title Page"
+            className="h-full w-full object-cover transition-transform duration-300 hover:scale-105"
+          />
+        )}
+
         <div className="absolute top-2 left-2 rounded-full bg-black/50 px-3 py-1 text-xs text-white backdrop-blur-sm">
           {event.game}
         </div>
