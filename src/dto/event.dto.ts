@@ -9,10 +9,10 @@ export const EventDtoSchema = z.object({
   id: z.string(),
   title: z.string(),
   game: z.enum([Game.Arma3, Game.ArmaReforger]),
-  timeUtc: z.string(),
+  startTimeUtc: z.string(),
   summary: z.string(),
   longDescription: z.string(),
-  location: z.string(),
+  serverMap: z.string(),
   imageUrl: z.string(),
   tags: z.array(TagDtoSchema),
   type: z.enum([EventType.PvE, EventType.PvP, EventType.PvPvE]),
@@ -20,7 +20,7 @@ export const EventDtoSchema = z.object({
   modSizeMb: z.number(),
   modType: z.enum([ModType.Modded, ModType.Vanilla]),
   serverName: z.string(),
-  serverPassword: z.string(),
+  serverPassword: z.string().nullable(),
   serverRegion: z.enum([ServerRegion.EU, ServerRegion.NA, ServerRegion.Other]),
 });
 
